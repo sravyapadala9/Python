@@ -11,13 +11,16 @@ while True:
 
     if choice == "1":
         name = input("Enter Name: ")
-        contacts.append(name)
+        phone = input("Enter Phone Number: ")
+
+        contacts.append([name, phone])
+
         print("Contact Added!")
 
     elif choice == "2":
-        print("Contacts:")
+        print("\nContacts:")
         for contact in contacts:
-            print(contact)
+            print("Name:", contact[0], "| Phone:", contact[1])
 
     elif choice == "3":
         print("Thank You!")
