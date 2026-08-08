@@ -23,5 +23,5 @@ while True:
         print("Thank You!")
         break
 
-    else:
+  else:
         print("Invalid Choice")
